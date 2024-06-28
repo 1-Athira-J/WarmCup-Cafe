@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+       <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <h1>Contact Us</h1>
+        <form method="post" action=''>
+          <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">(optional)Enter Your Email: <input id="email" name="email" type="email"/></label>
+          </fieldset>
+          <fieldset>
+            <legend>Reason</legend>
+            <label for="feedback"><input id="feedback" type="radio" name="reason" class="inline" checked /> Feedback</label>
+            <label for="complaint"><input id="complaint" type="radio" name="reason" class="inline" /> Complaint</label>
+            <label for="business"><input id="business" type="radio" name="reason" class="inline" /> Business</label>
+          </fieldset>
+          <fieldset>
+            <label for="message">Message:
+              <textarea id="message" name="message" rows="3" cols="30" placeholder="Type your message here..."></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Send" />
+        </form>
+      </body>
+    </html>
